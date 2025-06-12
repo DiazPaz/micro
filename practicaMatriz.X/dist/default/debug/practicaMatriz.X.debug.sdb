@@ -1,0 +1,52 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"36 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+[v _rotar90 rotar90 `(v  1 e 1 0 ]
+"47
+[v _main main `(v  1 e 1 0 ]
+"228 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc/pic16f887.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"32 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+[v _patrones1 patrones1 `[8]uc  1 e 8 0 ]
+"33
+[v _buffer buffer `[8]uc  1 e 8 0 ]
+"47
+[v _main main `(v  1 e 1 0 ]
+{
+"57
+[v main@i i `uc  1 a 1 9 ]
+"69
+[v main@i_47 i `uc  1 a 1 10 ]
+"55
+[v main@aux aux `ui  1 a 2 7 ]
+"73
+} 0
+"36
+[v _rotar90 rotar90 `(v  1 e 1 0 ]
+{
+"39
+[v rotar90@j j `uc  1 a 1 4 ]
+"37
+[v rotar90@i i `uc  1 a 1 5 ]
+"36
+[v rotar90@src src `*.4uc  1 p 1 0 ]
+[v rotar90@dst dst `*.4uc  1 p 1 1 ]
+"45
+} 0

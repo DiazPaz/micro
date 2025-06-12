@@ -1,0 +1,4 @@
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contadorBinario/default/CMakeFiles/contadorBinario_default_default_XC8_compile.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contadorBinario/default/CMakeFiles/default.elf.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contadorBinario/default/CMakeFiles/edit_cache.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contadorBinario/default/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,4 @@
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/practicaMatriz/default/CMakeFiles/practicaMatriz_default_default_XC8_compile.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/practicaMatriz/default/CMakeFiles/default.elf.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/practicaMatriz/default/CMakeFiles/edit_cache.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/practicaMatriz/default/CMakeFiles/rebuild_cache.dir

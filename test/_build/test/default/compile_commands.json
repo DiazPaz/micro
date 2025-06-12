@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/test/_build/test/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.00\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F887__ -D__DEBUG=1 -c -mcpu=16F887 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\test_default_default_XC8_compile.dir\\de4ccd71844d6db8ad051da510f39c1d\\main.c.p1 -c \"C:\\Users\\daizp\\OneDrive\\Escritorio\\UDEM\\OneDrive - Universidad de Monterrey\\OneDrive - UDEM\\Microprocesadores-LAPTOP-DDPP\\actividades\\test\\main.c\"",
+  "file": "C:\\Users\\daizp\\OneDrive\\Escritorio\\UDEM\\OneDrive - Universidad de Monterrey\\OneDrive - UDEM\\Microprocesadores-LAPTOP-DDPP\\actividades\\test\\main.c",
+  "output": "CMakeFiles\\test_default_default_XC8_compile.dir\\de4ccd71844d6db8ad051da510f39c1d\\main.c.p1"
+}
+]

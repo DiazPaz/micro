@@ -1,0 +1,362 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\practicaMatriz.X.production.o
+cinit CODE 0 7EE 7EE 12 2 1
+maintext CODE 0 696 696 158 2 1
+cstackCOMMON COMMON 1 70 70 9 1 1
+inittext CODE 0 653 653 13 2 1
+idataBANK0 CODE 0 666 666 30 2 1
+dataBANK0 BANK0 1 20 20 30 1 1
+config CONFIG 4 2007 2007 2 2 1
+$C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 50-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 50-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-652 2
+CONST 800-1FFF 2
+ENTRY 3-652 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-652 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 79-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-652 2
+STRCODE 800-1FFF 2
+STRING 3-652 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\practicaMatriz.X.production.o
+7EE cinit CODE >504:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7EE cinit CODE >507:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7EE cinit CODE >578:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7EF cinit CODE >579:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F0 cinit CODE >580:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F1 cinit CODE >581:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F2 cinit CODE >582:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F3 cinit CODE >583:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F4 cinit CODE >584:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F5 cinit CODE >585:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F6 cinit CODE >586:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7F7 cinit CODE >587:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7FC cinit CODE >593:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7FC cinit CODE >595:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+7FD cinit CODE >596:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+696 maintext CODE >40:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+696 maintext CODE >42:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+699 maintext CODE >43:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+69A maintext CODE >44:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+69F maintext CODE >50:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6A2 maintext CODE >50:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6A7 maintext CODE >52:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6AB maintext CODE >52:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6AE maintext CODE >52:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6B4 maintext CODE >53:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6BA maintext CODE >54:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6C1 maintext CODE >55:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6C4 maintext CODE >48:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6C7 maintext CODE >48:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6CB maintext CODE >48:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6D2 maintext CODE >57:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6D6 maintext CODE >59:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6D7 maintext CODE >61:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6DA maintext CODE >61:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6DF maintext CODE >63:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6E3 maintext CODE >63:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6E6 maintext CODE >63:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6EC maintext CODE >64:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6F2 maintext CODE >65:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6F9 maintext CODE >66:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6FC maintext CODE >59:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+6FF maintext CODE >59:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+703 maintext CODE >59:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+70A maintext CODE >68:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+70E maintext CODE >70:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+70F maintext CODE >72:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+712 maintext CODE >72:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+717 maintext CODE >74:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+71B maintext CODE >74:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+71E maintext CODE >74:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+724 maintext CODE >75:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+72A maintext CODE >76:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+731 maintext CODE >77:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+734 maintext CODE >70:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+737 maintext CODE >70:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+73B maintext CODE >70:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+742 maintext CODE >79:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+746 maintext CODE >81:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+747 maintext CODE >83:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+74A maintext CODE >83:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+74F maintext CODE >85:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+753 maintext CODE >85:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+756 maintext CODE >85:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+75C maintext CODE >86:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+762 maintext CODE >87:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+769 maintext CODE >88:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+76C maintext CODE >81:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+76F maintext CODE >81:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+773 maintext CODE >81:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+77A maintext CODE >90:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+77E maintext CODE >92:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+77F maintext CODE >94:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+782 maintext CODE >94:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+787 maintext CODE >96:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+78B maintext CODE >96:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+78E maintext CODE >96:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+794 maintext CODE >97:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+79A maintext CODE >98:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7A1 maintext CODE >99:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7A4 maintext CODE >92:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7A7 maintext CODE >92:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7AB maintext CODE >92:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7B2 maintext CODE >101:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7B6 maintext CODE >103:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7B7 maintext CODE >105:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7BA maintext CODE >105:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7BF maintext CODE >107:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7C3 maintext CODE >107:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7C6 maintext CODE >107:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7CC maintext CODE >108:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7D2 maintext CODE >109:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7D9 maintext CODE >110:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7DC maintext CODE >103:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7DF maintext CODE >103:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+7E3 maintext CODE >103:C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\practicaMatriz.X\main.c
+653 inittext CODE >552:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+653 inittext CODE >553:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+654 inittext CODE >554:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+655 inittext CODE >555:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+656 inittext CODE >556:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+657 inittext CODE >563:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+657 inittext CODE >564:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+65C inittext CODE >565:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+65D inittext CODE >566:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+65E inittext CODE >567:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+65F inittext CODE >568:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+660 inittext CODE >569:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+661 inittext CODE >570:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+662 inittext CODE >571:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+663 inittext CODE >572:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+664 inittext CODE >573:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+665 inittext CODE >574:C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 79 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+main@i 71 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+_main D2C 0 CODE 0 maintext dist/default/production\practicaMatriz.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+_patrones1 48 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+_patrones2 28 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+_patrones3 20 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+_patrones4 40 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+_patrones5 38 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+_patrones6 30 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+main@aux 77 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___stackhi 0 0 ABS 0 - C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+start_initialization FDC 0 CODE 0 cinit dist/default/production\practicaMatriz.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FDC 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 0 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 0 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800 0 ABS 0 - -
+__S1 79 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\practicaMatriz.X.production.o
+__pmaintext D2C 0 CODE 0 maintext dist/default/production\practicaMatriz.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+main@i_45 72 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+main@i_46 73 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+main@i_47 74 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+main@i_48 75 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+main@i_49 76 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 CA6 0 CODE 0 inittext dist/default/production\practicaMatriz.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\practicaMatriz.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\practicaMatriz.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 CCC 0 CODE 0 idataBANK0 dist/default/production\practicaMatriz.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\practicaMatriz.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 CAE 0 CODE 0 inittext dist/default/production\practicaMatriz.X.production.o
+__end_of_main FDC 0 CODE 0 maintext dist/default/production\practicaMatriz.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\practicaMatriz.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FDC 0 CODE 0 cinit dist/default/production\practicaMatriz.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\daizp\AppData\Local\Temp\xcAs13fg.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7EE FDC 12 2
+maintext 0 696 D2C 158 2
+cstackCOMMON 1 70 70 9 1
+inittext 0 653 CA6 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 666 CCC 30 2
+dataBANK0 1 20 20 30 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

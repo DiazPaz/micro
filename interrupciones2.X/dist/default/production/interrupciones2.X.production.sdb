@@ -1,0 +1,94 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"50 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\interrupciones2.X\main.c
+[v _math math `(v  1 e 1 0 ]
+"61
+[v _main main `(v  1 e 1 0 ]
+"97
+[v _ISR ISR `II(v  1 e 1 0 ]
+"288 C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"350
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1344
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1476
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1538
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1600
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"3385
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3898
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3925
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"3928
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"3931
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"33 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\interrupciones2.X\main.c
+[v _digito digito `[10]uc  1 e 10 0 ]
+"46
+[v _num num `i  1 e 2 0 ]
+"47
+[v _dec dec `i  1 e 2 0 ]
+"48
+[v _aux aux `i  1 e 2 0 ]
+"61
+[v _main main `(v  1 e 1 0 ]
+{
+"95
+} 0
+"97
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"106
+} 0
+"50
+[v _math math `(v  1 e 1 0 ]
+{
+"59
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0

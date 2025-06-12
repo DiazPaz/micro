@@ -1,0 +1,4 @@
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contador4Digitos/default/CMakeFiles/contador4Digitos_default_default_XC8_compile.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contador4Digitos/default/CMakeFiles/default.elf.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contador4Digitos/default/CMakeFiles/edit_cache.dir
+C:/Users/daizp/OneDrive/Escritorio/UDEM/OneDrive - Universidad de Monterrey/OneDrive - UDEM/Microprocesadores-LAPTOP-DDPP/actividades/_build/contador4Digitos/default/CMakeFiles/rebuild_cache.dir
