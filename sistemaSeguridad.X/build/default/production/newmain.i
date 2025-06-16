@@ -7,7 +7,6 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "newmain.c" 2
-# 10 "newmain.c"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2648,7 +2647,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 2 3
-# 11 "newmain.c" 2
+# 2 "newmain.c" 2
 
 
 
@@ -2663,7 +2662,7 @@ extern __bank0 __bit __timeout;
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
-# 36 "newmain.c"
+# 27 "newmain.c"
 unsigned char PASS[4] = {0x73, 0x77, 0x6D, 0x6D};
 unsigned char FAIL[4] = {0x71, 0x77, 0x30, 0x38};
 unsigned char digits[3] = {0x6, 0x5B, 0x4F};
@@ -2686,13 +2685,14 @@ void main(void) {
     OPTION_REG &= 0b01111111;
 
     TRISB = 0b00011111;
-    TRISC = 0x00;
-    TRISD = 0x00;
+    TRISC = 0;
+    TRISD = 0;
 
     PORTB = 0;
     PORTC = 0;
     PORTD = 0;
 
+    INTF = 0;
     INTEDG = 0;
     INTE = 1;
     GIE = 1;

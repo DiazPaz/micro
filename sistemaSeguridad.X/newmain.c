@@ -52,7 +52,8 @@ void main(void) {
     PORTB = 0;
     PORTC = 0;
     PORTD = 0;
-
+    
+    INTF = 0;
     INTEDG = 0; // Flanco de bajada
     INTE = 1;   // Interrupción externa (RB0)
     GIE = 1;    // Interrupciones globales
