@@ -1,13 +1,3 @@
-
-/* 
- * Microprocesadores
- * Archivo:   main.c
- * Autor: Alejandro Omar Reyes Guía
- * Práctica: 1
- * Descripción: LED Parpadeante. 
- *
- * Created on 18 de mayo de 2023, 06:41 PM
- */
 #include <xc.h>         // Biblioteca principal del compilador XC8
 
 //=============================================================================

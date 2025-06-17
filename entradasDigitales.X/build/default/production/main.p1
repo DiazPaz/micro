@@ -26,7 +26,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "243
 [; ;C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h: 243: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x006)));
 [v _PORTBbits `VS11 ~T0 @X0 0 e@6 ]
-"356
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v3.00\pic\include/builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"356 C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h
 [; ;C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h: 356:     struct {
 [s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S16 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
@@ -271,97 +275,109 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3544
 [; ;C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h: 3544: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"18 main.c
-[; ;main.c: 18: 
+"8 main.c
+[; ;main.c: 8: 
 [p x FOSC  =  XT         ]
-"19
-[; ;main.c: 19: 
+"9
+[; ;main.c: 9:     ANSELH = 0;
 [p x WDTE  =  OFF        ]
-"20
-[; ;main.c: 20:     unsigned int a = 0, b = 0, c = 0;
+"10
+[; ;main.c: 10: 
 [p x PWRTE  =  OFF       ]
-"21
-[; ;main.c: 21:     while(1)
+"11
+[; ;main.c: 11: 
 [p x BOREN  =  ON        ]
-"22
-[; ;main.c: 22:     {
+"12
+[; ;main.c: 12:     OPTION_REG = OPTION_REG & 0b01111111;
 [p x LVP  =  OFF         ]
-"23
-[; ;main.c: 23:         unsigned int aux1 = !PORTBbits.RB0;
+"13
+[; ;main.c: 13: 
 [p x CPD  =  OFF         ]
-"24
-[; ;main.c: 24:         unsigned int aux2 = !PORTBbits.RB1;
+"14
+[; ;main.c: 14: 
 [p x WRT  =  OFF         ]
-"25
-[; ;main.c: 25:         unsigned int aux3 = !PORTBbits.RB2;
+"15
+[; ;main.c: 15:     TRISB = 0xFF;
 [p x CP  =  OFF          ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"33
-[; ;main.c: 33: 
+"23
+[; ;main.c: 23:         unsigned int aux1 = !PORTBbits.RB0;
 [v _main `(v ~T0 @X0 1 ef ]
-"34
-[; ;main.c: 34:         PORTDbits.RD0 = a;
+"24
+[; ;main.c: 24:         unsigned int aux2 = !PORTBbits.RB1;
 {
 [e :U _main ]
 [f ]
-"36
-[; ;main.c: 36:         PORTDbits.RD2 = c;
+"26
+[; ;main.c: 26: 
 [e = _ANSELH -> -> 0 `i `uc ]
-"39
-[; ;main.c: 39: }
+"29
+[; ;main.c: 29:         if(aux2 == 1)
 [e = _OPTION_REG -> & -> _OPTION_REG `i -> 127 `i `uc ]
-"42
+"32
+[; ;main.c: 32:             c = !c;
 [e = _TRISB -> -> 255 `i `uc ]
-"43
+"33
+[; ;main.c: 33: 
 [e = _TRISD -> -> 0 `i `uc ]
-"44
+"34
+[; ;main.c: 34: 
 [e = _PORTD -> -> 0 `i `uc ]
-"47
+"37
+[; ;main.c: 37:         _delay((unsigned long)((50)*(4000000/4000.0)));
 [v _a `ui ~T0 @X0 1 a ]
 [e = _a -> -> 0 `i `ui ]
 [v _b `ui ~T0 @X0 1 a ]
 [e = _b -> -> 0 `i `ui ]
 [v _c `ui ~T0 @X0 1 a ]
 [e = _c -> -> 0 `i `ui ]
-"48
+"38
+[; ;main.c: 38: 
 [e :U 144 ]
-"49
+"39
+[; ;main.c: 39:         PORTDbits.RD0 = a;
 {
-"50
+"40
+[; ;main.c: 40:         PORTDbits.RD1 = b;
 [v _aux1 `ui ~T0 @X0 1 a ]
 [e = _aux1 -> -> ! != -> . . _PORTBbits 0 0 `i -> 0 `i `i `ui ]
-"51
+"41
+[; ;main.c: 41:         PORTDbits.RD2 = c;
 [v _aux2 `ui ~T0 @X0 1 a ]
 [e = _aux2 -> -> ! != -> . . _PORTBbits 0 1 `i -> 0 `i `i `ui ]
-"52
+"42
+[; ;main.c: 42: 
 [v _aux3 `ui ~T0 @X0 1 a ]
 [e = _aux3 -> -> ! != -> . . _PORTBbits 0 2 `i -> 0 `i `i `ui ]
-"54
+"44
+[; ;main.c: 44: }
 [e $ ! == _aux1 -> -> 1 `i `ui 146  ]
-"55
+"45
 [e = _a -> -> ! != _a -> -> 0 `i `ui `i `ui ]
 [e :U 146 ]
-"56
+"46
 [e $ ! == _aux2 -> -> 1 `i `ui 147  ]
-"57
+"47
 [e = _b -> -> ! != _b -> -> 0 `i `ui `i `ui ]
 [e :U 147 ]
-"58
+"48
 [e $ ! == _aux3 -> -> 1 `i `ui 148  ]
-"59
+"49
 [e = _c -> -> ! != _c -> -> 0 `i `ui `i `ui ]
 [e :U 148 ]
-"61
+"54
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"56
 [e = . . _PORTDbits 0 0 -> _a `uc ]
-"62
+"57
 [e = . . _PORTDbits 0 1 -> _b `uc ]
-"63
+"58
 [e = . . _PORTDbits 0 2 -> _c `uc ]
-"65
+"60
 }
 [e :U 143 ]
 [e $U 144  ]
 [e :U 145 ]
-"66
+"61
 [e :UE 142 ]
 }

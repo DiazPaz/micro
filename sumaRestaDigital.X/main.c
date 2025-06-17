@@ -59,24 +59,19 @@ void main(void)
     // Configurar el funcionamiento de los botones
     unsigned int cont = 0; 
     unsigned int a = 0, b = 0, c = 0;
+    unsigned int aux1 = !PORTBbits.RB0; 
+    unsigned int aux2 = !PORTBbits.RB1;
     while(1)
     {
-        unsigned int aux1 = !PORTBbits.RB0; 
-        unsigned int aux2 = !PORTBbits.RB1;
-        
-        if(aux1 == 1)
-        {
+        if(aux1)
             cont++;
-            while(!PORTBbits.RB0); // Espera a que se suelte
-        }
 
-        if(aux2 == 1)
+        if(aux2)
         {
             if(cont > 0)
                 cont--;
             else
                 cont = 9;
-            while(!PORTBbits.RB1); // Espera a que se suelte
         }   
         
         cont %= 10;
