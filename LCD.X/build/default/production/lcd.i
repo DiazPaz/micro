@@ -7,9 +7,10 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "lcd.c" 2
-# 10 "lcd.c"
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include\\c99/stdbool.h" 1 3
-# 11 "lcd.c" 2
+# 4 "lcd.c" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2650,7 +2651,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:\\Program Files\\Microchip\\xc8\\v3.00\\pic\\include/xc.h" 2 3
-# 12 "lcd.c" 2
+# 5 "lcd.c" 2
 # 1 "./lcd.h" 1
 
 
@@ -2687,7 +2688,7 @@ void LCD_Write ( unsigned char c );
 
 
 void LCD_Out ( char a );
-# 13 "lcd.c" 2
+# 6 "lcd.c" 2
 
 LCD lcd;
 
@@ -2737,7 +2738,7 @@ void LCD_Write ( unsigned char c ) {
 _Bool LCD_Init ( LCD display ) {
 
     lcd = display;
-# 70 "lcd.c"
+# 63 "lcd.c"
     if ( lcd.PORT == &PORTA ) {
         TRISA = 0x00;
     }
@@ -2747,7 +2748,7 @@ _Bool LCD_Init ( LCD display ) {
     else if ( lcd.PORT == &PORTC ) {
         TRISC = 0x00;
     }
-# 87 "lcd.c"
+# 80 "lcd.c"
     else {
         return 0;
     }
@@ -2796,17 +2797,13 @@ void LCD_putc ( char c ) {
 }
 
 void LCD_puts ( char *a ) {
-
-    for ( int i = 0; a[i] != '\0'; ++i ) {
-        LCD_putc(a[i]);
+    while ( *a ) {
+        LCD_putc(*a++);
     }
-
 }
 
 void LCD_putrs ( const char *a ) {
-
-    for ( int i = 0; a[i] != '\0'; ++i ) {
-        LCD_putc(a[i]);
+    while ( *a ) {
+        LCD_putc(*a++);
     }
-
 }

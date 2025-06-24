@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\dat\20250326211330_en.msgs \
   -cn -h+dist/default/production\LCD.X.production.sym \
   --cmf=dist/default/production\LCD.X.production.cmf -z -Q16F887 \
-  -oC:\Users\daizp\AppData\Local\Temp\xcAst98.\driver_tmp_3.o \
+  -oC:\Users\daizp\AppData\Local\Temp\xcAsnbc.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/LCD.X.production.map \
-  --md=C:\Users\daizp\AppData\Local\Temp\xcAst98.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\daizp\AppData\Local\Temp\xcAsnbc.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler -ACODE=00h-07FFhx4 -ASTRCODE=00h-01FFFh \
   -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 -AENTRY=00h-0FFhx32 \
   -ACOMMON=070h-07Fh -ABANK0=020h-06Fh -ABANK1=0A0h-0EFh \
@@ -22,7 +22,7 @@ Linker command line:
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
   -preset_vec=00h,intentry,sivt,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -k \
-  C:\Users\daizp\AppData\Local\Temp\xcAst98.\driver_tmp_12.o \
+  C:\Users\daizp\AppData\Local\Temp\xcAsnbc.\driver_tmp_12.o \
   dist/default/production\LCD.X.production.o 
 
 Object code version is 3.11
@@ -32,7 +32,7 @@ Machine type is 16F887
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\daizp\AppData\Local\Temp\xcAst98.\driver_tmp_12.o
+C:\Users\daizp\AppData\Local\Temp\xcAsnbc.\driver_tmp_12.o
                 end_init                              0        0        3        0       0
                 config                             2007     2007        2        0       4
 dist/default/production\LCD.X.production.o
@@ -42,13 +42,13 @@ dist/default/production\LCD.X.production.o
                 text4                               51A      51A       55      A34       0
                 text3                               678      678       AC      CF0       0
                 text2                               5E6      5E6       92      BCC       0
-                text1                               4F6      4F6       24      9EC       0
+                text1                               4FE      4FE       1C      9FC       0
                 maintext                            56F      56F       77      ADE       0
                 cstackBANK0                          20       20        8       20       1
                 cstackCOMMON                         70       70        E       70       1
                 dataBANK0                            28       28        5       20       1
                 strings                               3        3       13        6       0
-                idataBANK0                          4F1      4F1        5      9E2       0
+                idataBANK0                          4F9      4F9        5      9F2       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
@@ -58,9 +58,9 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text4                               51A      51A       55         0
                 text3                               678      678       AC         0
                 text2                               5E6      5E6       92         0
-                text1                               4F6      4F6       24         0
+                text1                               4FE      4FE       1C         0
                 maintext                            56F      56F       77         0
-                idataBANK0                          4F1      4F1        5         0
+                idataBANK0                          4F9      4F9        5         0
 
         CLASS   STRCODE        
 
@@ -116,8 +116,8 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 strings                        000003  000013  000016         6       0  STRING      2
                 cstackBANK0                    000020  00000D  00002D        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
-                idataBANK0                     0004F1  000005  0004F6       9E2       0  CODE        2
-                text1                          0004F6  000024  00051A       9EC       0  CODE        2
+                idataBANK0                     0004F9  000005  0004FE       9F2       0  CODE        2
+                text1                          0004FE  00001C  00051A       9FC       0  CODE        2
                 text4                          00051A  000055  00056F       A34       0  CODE        2
                 maintext                       00056F  000077  0005E6       ADE       0  CODE        2
                 text2                          0005E6  000092  000678       BCC       0  CODE        2
@@ -133,12 +133,12 @@ UNUSED ADDRESS RANGES
         BANK1            00A0-00EF             50           1
         BANK2            0110-016F             60           1
         BANK3            0190-01EF             60           1
-        CODE             0016-04F0            4DB           2
+        CODE             0016-04F8            4E3           2
                          0800-1FFF            800
-        CONST            0016-04F0            100           2
+        CONST            0016-04F8            100           2
                          0800-1FFF            100
         EEDATA           2100-21FF            100           2
-        ENTRY            0016-04F0            100           2
+        ENTRY            0016-04F8            100           2
                          0800-1FFF            100
         IDLOC            2000-2003              4           2
         RAM              002D-006F             43           1
@@ -149,9 +149,9 @@ UNUSED ADDRESS RANGES
         SFR1             0080-009F             20           1
         SFR2             0100-010F             10           1
         SFR3             0180-018F             10           1
-        STRCODE          0016-04F0            4DB           2
+        STRCODE          0016-04F8            4E3           2
                          0800-1FFF           1800
-        STRING           0016-04F0            100           2
+        STRING           0016-04F8            100           2
                          0800-1FFF            100
 
                                   Symbol Table
@@ -162,12 +162,11 @@ LCD_Out@c                cstackCOMMON 0072
 LCD_Write@c              cstackCOMMON 0075
 LCD_putc@c               cstackCOMMON 0075
 LCD_putrs@a              cstackCOMMON 0076
-LCD_putrs@i              cstackCOMMON 0077
 _LCD_Init                text3        0678
 _LCD_Out                 text5        0724
 _LCD_Write               text4        051A
 _LCD_putc                text2        05E6
-_LCD_putrs               text1        04F6
+_LCD_putrs               text1        04FE
 _PORTA                   (abs)        0005
 _PORTB                   (abs)        0006
 _PORTC                   (abs)        0007
@@ -276,10 +275,10 @@ __initialization         cinit        07DE
 __pcstackBANK0           cstackBANK0  0020
 __pcstackCOMMON          cstackCOMMON 0070
 __pdataBANK0             dataBANK0    0028
-__pidataBANK0            idataBANK0   04F1
+__pidataBANK0            idataBANK0   04F9
 __pmaintext              maintext     056F
 __pstrings               strings      0003
-__ptext1                 text1        04F6
+__ptext1                 text1        04FE
 __ptext2                 text2        05E6
 __ptext3                 text3        0678
 __ptext4                 text4        051A
@@ -316,10 +315,10 @@ lcd.c
 		_LCD_Init      		CODE           	0678	0000	172
 		_LCD_Out       		CODE           	0724	0000	186
 		_LCD_putc      		CODE           	05E6	0000	146
-		_LCD_putrs     		CODE           	04F6	0000	36
+		_LCD_putrs     		CODE           	04FE	0000	28
 		_LCD_Write     		CODE           	051A	0000	85
 
-lcd.c estimated size: 625
+lcd.c estimated size: 617
 
 main.c
 		_main          		CODE           	056F	0000	119

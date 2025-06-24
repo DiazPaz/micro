@@ -1,0 +1,212 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"9 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\testPr2.X\lcd.c
+[v _LCD_Out LCD_Out `(v  1 e 1 0 ]
+"41
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+"52
+[v _LCD_Init LCD_Init `(a  1 e 1 0 ]
+"110
+[v _LCD_putc LCD_putc `(v  1 e 1 0 ]
+"135
+[v _LCD_putrs LCD_putrs `(v  1 e 1 0 ]
+"30 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\testPr2.X\main.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"37
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+"50
+[v _main main `(v  1 e 1 0 ]
+"82
+[v _pot_x pot_x `(v  1 e 1 0 ]
+"103
+[v _pot_y pot_y `(v  1 e 1 0 ]
+"123
+[v _checar_boton checar_boton `(v  1 e 1 0 ]
+"129
+[v _disparar disparar `(v  1 e 1 0 ]
+"164 C:/Users/daizp/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S65 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"181
+[u S74 . 1 `S65 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES74  1 e 1 @5 ]
+"226
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S121 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"243
+[u S130 . 1 `S121 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES130  1 e 1 @6 ]
+"288
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"1236
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1243
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1344
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1414
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+[s S44 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1431
+[u S53 . 1 `S44 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES53  1 e 1 @133 ]
+"1476
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1538
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"2968
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2975
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"3385
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3907
+[v _GO_nDONE GO_nDONE `VEb  1 e 0 @249 ]
+[s S22 . 5 `*.39VEuc 1 PORT 2 0 `uc 1 RS 1 2 :3:0 
+`uc 1 EN 1 2 :3:3 
+`uc 1 D4 1 3 :3:0 
+`uc 1 D5 1 3 :3:3 
+`uc 1 D6 1 4 :3:0 
+`uc 1 D7 1 4 :3:3 
+]
+"7 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\testPr2.X\lcd.c
+[v _lcd lcd `S22  1 e 5 0 ]
+"47 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\testPr2.X\main.c
+[v _pos_x pos_x `uc  1 e 1 0 ]
+"48
+[v _pos_y pos_y `uc  1 e 1 0 ]
+"50
+[v _main main `(v  1 e 1 0 ]
+{
+"77
+} 0
+"103
+[v _pot_y pot_y `(v  1 e 1 0 ]
+{
+"104
+[v pot_y@adc_y adc_y `ui  1 a 2 11 ]
+"118
+} 0
+"82
+[v _pot_x pot_x `(v  1 e 1 0 ]
+{
+"83
+[v pot_x@adc_x adc_x `ui  1 a 2 4 ]
+"98
+} 0
+"37
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+[v ADC_Read@channel channel `uc  1 p 1 wreg ]
+[v ADC_Read@channel channel `uc  1 p 1 wreg ]
+[v ADC_Read@channel channel `uc  1 p 1 4 ]
+"45
+} 0
+"123
+[v _checar_boton checar_boton `(v  1 e 1 0 ]
+{
+"127
+} 0
+"129
+[v _disparar disparar `(v  1 e 1 0 ]
+{
+"136
+[v disparar@moved moved `a  1 a 1 9 ]
+"135
+[v disparar@offset offset `uc  1 a 1 10 ]
+"171
+} 0
+"135 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\testPr2.X\lcd.c
+[v _LCD_putrs LCD_putrs `(v  1 e 1 0 ]
+{
+"137
+[v LCD_putrs@i i `i  1 a 2 7 ]
+"135
+[v LCD_putrs@a a `*.24DCuc  1 p 1 6 ]
+"141
+} 0
+"110
+[v _LCD_putc LCD_putc `(v  1 e 1 0 ]
+{
+[v LCD_putc@c c `uc  1 p 1 wreg ]
+[v LCD_putc@c c `uc  1 p 1 wreg ]
+"112
+[v LCD_putc@c c `uc  1 p 1 5 ]
+"125
+} 0
+"52
+[v _LCD_Init LCD_Init `(a  1 e 1 0 ]
+{
+"103
+[v LCD_Init@cmd cmd `uc  1 a 1 13 ]
+[s S22 . 5 `*.39VEuc 1 PORT 2 0 `uc 1 RS 1 2 :3:0 
+`uc 1 EN 1 2 :3:3 
+`uc 1 D4 1 3 :3:0 
+`uc 1 D5 1 3 :3:3 
+`uc 1 D6 1 4 :3:0 
+`uc 1 D7 1 4 :3:3 
+]
+"52
+[v LCD_Init@display display `S22  1 p 5 6 ]
+"108
+} 0
+"41
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+{
+[v LCD_Write@c c `uc  1 p 1 wreg ]
+[v LCD_Write@c c `uc  1 p 1 wreg ]
+"43
+[v LCD_Write@c c `uc  1 p 1 5 ]
+"50
+} 0
+"9
+[v _LCD_Out LCD_Out `(v  1 e 1 0 ]
+{
+[v LCD_Out@c c `uc  1 p 1 wreg ]
+[v LCD_Out@c c `uc  1 p 1 wreg ]
+"11
+[v LCD_Out@c c `uc  1 p 1 2 ]
+"39
+} 0
+"30 C:\Users\daizp\OneDrive\Escritorio\UDEM\OneDrive - Universidad de Monterrey\OneDrive - UDEM\Microprocesadores-LAPTOP-DDPP\actividades\testPr2.X\main.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+{
+"35
+} 0

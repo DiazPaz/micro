@@ -44,15 +44,7 @@ int main(int argc, char** argv)
     {
         LCD_Clear();
         LCD_Set_Cursor(0,0);
-        LCD_putrs("Voltaje 1: ");
-        LCD_Set_Cursor(0,11);
         
-        unsigned int adc_result1 = ADC_read(0);
-        unsigned int volt1 = (adc_result1 * 50000) / 1023;
-        unsigned int ent1 = volt1 / 10000;
-        unsigned int dec1 = volt1 % 10000;
-        sprintf(buffer1, "%u.%u",ent1,dec1);
-        LCD_putrs(buffer1);
         
         LCD_Set_Cursor(1,0);
         LCD_putrs("Voltaje 2: ");
