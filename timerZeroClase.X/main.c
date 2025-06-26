@@ -40,7 +40,7 @@ char exec[6];
 
 void TMR0_init(void)
 {
-    OPTION_REG = 0x07;
+    OPTION_REG = 0x07; // PRESCALER = 256
     TMR0 = 217; 
     T0IE = 1; 
     GIE = 1; 

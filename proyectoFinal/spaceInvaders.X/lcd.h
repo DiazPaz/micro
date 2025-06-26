@@ -5,6 +5,9 @@
 extern "C" {
 #endif
 
+#include <stdbool.h>
+#include <stdint.h>
+    
 typedef struct {
     volatile unsigned char*  PORT;  // Pointer to the LCD port e.g &PORTC
     unsigned RS :3;                 // The RS bit of the LCD PORT e.g. 2
@@ -87,6 +90,12 @@ void LCD_Write ( unsigned char c );
 
 // [Internal use only] Outputs the data to the LCD Port
 void LCD_Out ( char a );
+
+// Optional: Move CG RAM address for custom characters
+void LCD_cg_ram_addr(uint8_t addr);
+
+void LCD_ram_write(uint8_t data);
+
 
 #ifdef	__cplusplus
 }

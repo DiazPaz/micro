@@ -5,6 +5,9 @@
 extern "C" {
 #endif
 
+#include <stdbool.h>
+#include <stdint.h>
+    
 typedef struct {
     volatile unsigned char*  PORT;  // Pointer to the LCD port e.g &PORTC
     unsigned RS :3;                 // The RS bit of the LCD PORT e.g. 2
